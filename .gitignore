@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Entornos virtuales (en cualquier subproyecto)
+.venv/
+venv/
+env/
+ENV/
+
+# Variables de entorno y secretos locales
+.env
+.env.*
+!.env.example
+
+# Herramientas y configuración local
+.vscode/
+.idea/
+*.code-workspace
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.temp
+*.swp
+
+# Node/frontend generado
+node_modules/
+.parcel-cache/
+.vite/
+
+# Archivos comprimidos de trabajo
+*.zip
