@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nova — Ideas claras, productos vivos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="boceto 1.css">
+</head>
+<body>
+
+  <!-- ======== NAV ======== -->
+  <header id="inicio" class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">✺</span>
+        <span class="brand-name">Nova</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul id="navLinks" class="nav-links">
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#explorar">Explorar</a></li>
+          <li><a class="nav-link" href="#demo">Demo</a></li>
+          <li><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeBtn" class="icon-btn" type="button" aria-label="Cambiar tema">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="navToggle" class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ======== HERO ======== -->
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Productividad sostenible</span>
+        <h1 class="hero-title">Convierte tus ideas en impulso real</h1>
+        <p class="hero-sub">Nova es el espacio simple y vivo donde capturas ideas, sigues tu progreso y avanzas sin fricción — con la calidez de algo hecho a mano.</p>
+        <div class="hero-cta">
+          <button id="ctaStart" class="btn btn-primary" type="button">Probar la demo</button>
+          <button id="ctaDemo" class="btn btn-secondary" type="button">Ver funciones</button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="2400">0</span>
+            <span class="stat-label">Ideas capturadas</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="980">0</span>
+            <span class="stat-label">Proyectos activos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="99">0</span>
+            <span class="stat-label">% satisfacción</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-card">
+          <div class="panel-head">
+            <span class="panel-title">Tu impulso semanal</span>
+            <button id="boostBtn" class="chip-btn" type="button">Impulsar ⚡</button>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-label"><span>Diseño</span><span>62%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 62%"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>Desarrollo</span><span>45%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 45%"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>Lanzamiento</span><span>20%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 20%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======== EXPLORAR / FEATURES ======== -->
+    <section id="explorar" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Explorar</span>
+        <h2>Todo lo que necesitas, nada de lo que no</h2>
+        <p>Cada función está pensada para que avances sin ruido visual ni pasos de más.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Categorías de funciones">
+        <button class="tab active" data-tab="rendimiento" role="tab" aria-selected="true">Rendimiento</button>
+        <button class="tab" data-tab="experiencia" role="tab" aria-selected="false">Experiencia</button>
+        <button class="tab" data-tab="personalizacion" role="tab" aria-selected="false">Personalización</button>
+      </div>
+
+      <div class="tab-panels">
+        <div id="panel-rendimiento" class="tab-panel active">
+          <div class="features-grid">
+            <button class="feature-card" data-feature="velocidad">
+              <span class="feature-icon">⚡</span>
+              <span class="feature-title">Velocidad</span>
+            </button>
+            <button class="feature-card" data-feature="simple">
+              <span class="feature-icon">🌿</span>
+              <span class="feature-title">Simplicidad</span>
+            </button>
+            <button class="feature-card" data-feature="responsive">
+              <span class="feature-icon">📱</span>
+              <span class="feature-title">Responsive</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="panel-experiencia" class="tab-panel" hidden>
+          <div class="features-grid">
+            <button class="feature-card" data-feature="guiado">
+              <span class="feature-icon">🧭</span>
+              <span class="feature-title">Navegación guiada</span>
+            </button>
+            <button class="feature-card" data-feature="feedback">
+              <span class="feature-icon">✅</span>
+              <span class="feature-title">Feedback visual</span>
+            </button>
+            <button class="feature-card" data-feature="accesible">
+              <span class="feature-icon">♿</span>
+              <span class="feature-title">Accesibilidad</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="panel-personalizacion" class="tab-panel" hidden>
+          <div class="features-grid">
+            <button class="feature-card" data-feature="temas">
+              <span class="feature-icon">🌗</span>
+              <span class="feature-title">Temas claro/oscuro</span>
+            </button>
+            <button class="feature-card" data-feature="animaciones">
+              <span class="feature-icon">🍃</span>
+              <span class="feature-title">Animaciones suaves</span>
+            </button>
+            <button class="feature-card" data-feature="personalizable">
+              <span class="feature-icon">🛠️</span>
+              <span class="feature-title">Personalizable</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <p id="featureHint" class="feature-hint">Selecciona una tarjeta para ver más detalles.</p>
+    </section>
+
+    <!-- ======== DEMO ======== -->
+    <section id="demo" class="section section-alt">
+      <div class="section-head">
+        <span class="eyebrow">Demo interactiva</span>
+        <h2>Anota tus ideas, ordénalas por prioridad</h2>
+        <p>Se guardan en tu navegador — pruébalo, no se va a ningún servidor.</p>
+      </div>
+
+      <div class="demo-grid">
+        <form id="ideaForm" class="demo-form card">
+          <label class="field-label" for="ideaInput">Nueva idea</label>
+          <input id="ideaInput" class="text-input" type="text" placeholder="Ej. Rediseñar la portada" autocomplete="off" />
+
+          <fieldset class="priority-fieldset">
+            <legend class="field-label">Prioridad</legend>
+            <label class="radio-pill">
+              <input type="radio" name="priority" value="alta" />
+              <span>Alta</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="priority" value="media" />
+              <span>Media</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="priority" value="baja" checked />
+              <span>Baja</span>
+            </label>
+          </fieldset>
+
+          <button class="btn btn-primary btn-block" type="submit">Agregar idea</button>
+        </form>
+
+        <div class="demo-list-wrap card">
+          <div class="list-head">
+            <span>Tus ideas (<span id="ideaCount">0</span>)</span>
+            <button id="clearIdeas" class="btn-ghost" type="button">Vaciar lista</button>
+          </div>
+          <ul id="ideaList" class="idea-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACTO ======== -->
+    <section id="contacto" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Contacto</span>
+        <h2>¿Tienes una idea para Nova?</h2>
+        <p>Escríbenos — respondemos casi siempre el mismo día.</p>
+      </div>
+
+      <form id="contactForm" class="contact-card card">
+        <div class="field">
+          <label class="field-label" for="name">Nombre</label>
+          <input id="name" type="text" placeholder="Tu nombre" />
+          <span class="error-msg"></span>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="email">Correo</label>
+          <input id="email" type="email" placeholder="tu@correo.com" />
+          <span class="error-msg"></span>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="message">Mensaje</label>
+          <textarea id="message" rows="4" placeholder="Cuéntanos tu idea..."></textarea>
+          <span class="error-msg"></span>
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="brand-mark" aria-hidden="true">✺</span>
+    <span>Nova — hecho con calma y buenas ideas.</span>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" type="button" aria-label="Volver arriba">↑</button>
+  <div id="toast" class="toast"></div>
+
+  <script src="boceto 1.js"></script>
+</body>
+</html>
