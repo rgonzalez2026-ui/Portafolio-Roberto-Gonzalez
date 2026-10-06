@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reservar Cita | Prestige Legal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#131b2e",
+                    "secondary-container": "#fae0a9",
+                    "on-secondary-fixed-variant": "#56451c",
+                    "background": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#c6c6cd",
+                    "on-surface": "#0d1c2e",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#dce9ff",
+                    "surface-container-highest": "#d5e3fc",
+                    "outline": "#76777d",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-tertiary-fixed-variant": "#474743",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "inverse-on-surface": "#eaf1ff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#c8c6c2",
+                    "on-secondary-container": "#756237",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#fae0a9",
+                    "secondary": "#6f5c31",
+                    "primary": "#000000",
+                    "surface": "#f8f9ff",
+                    "on-primary-container": "#7c839b",
+                    "inverse-primary": "#bec6e0",
+                    "tertiary-container": "#1c1c19",
+                    "on-background": "#0d1c2e",
+                    "surface-variant": "#d5e3fc",
+                    "surface-container": "#e6eeff",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-container-low": "#eff4ff",
+                    "surface-dim": "#ccdbf3",
+                    "on-surface-variant": "#45464d",
+                    "surface-bright": "#f8f9ff",
+                    "primary-fixed": "#dae2fd",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#565e74",
+                    "on-tertiary-container": "#858480",
+                    "tertiary-fixed": "#e5e2dd",
+                    "on-secondary-fixed": "#251a00",
+                    "secondary-fixed-dim": "#ddc490"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "container-max": "1200px",
+                    "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Work Sans"],
+                    "caption": ["Work Sans"],
+                    "display-lg": ["Playfair Display"],
+                    "label-md": ["Work Sans"],
+                    "headline-sm": ["Playfair Display"],
+                    "body-md": ["Work Sans"],
+                    "display-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: #c6c6cd; border-radius: 2px; }
+      
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="bg-background dark:bg-primary-container border-b border-outline-variant dark:border-on-primary-container fixed top-0 left-0 right-0 z-50">
+<div class="flex justify-between items-center px-gutter max-w-container-max mx-auto w-full h-20">
+<div class="text-headline-sm font-headline-sm tracking-tighter text-primary dark:text-inverse-primary uppercase">
+            PRESTIGE LEGAL
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Áreas de Práctica</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Abogados</a>
+<a class="text-primary dark:text-secondary-fixed border-b-2 border-primary dark:border-secondary-fixed pb-1 font-label-md text-label-md" href="#">Reservar Cita</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Mis Solicitudes</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-none font-label-md text-label-md hover:bg-primary/90 transition-all uppercase">
+            Portal de Clientes
+        </button>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="pt-32 pb-20 px-gutter max-w-container-max mx-auto">
+<header class="mb-12">
+<h1 class="font-display-lg text-display-lg mb-4 text-primary">Programar una Consulta</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Asegure su consulta confidencial con nuestros especialistas legales líderes. Seleccione un horario que se ajuste a su agenda para una revisión meticulosa de su caso.
+        </p>
+</header>
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- Left Side: Scheduling Interface -->
+<div class="flex-grow space-y-12">
+<!-- Step 1: Calendar -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md">1</span>
+<h2 class="font-headline-sm text-headline-sm">Seleccione una Fecha</h2>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-6">
+<div class="flex justify-between items-center mb-8">
+<h3 class="font-headline-sm text-headline-sm">Octubre 2024</h3>
+<div class="flex gap-4">
+<button class="p-2 hover:bg-surface-container transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 hover:bg-surface-container transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="calendar-grid mb-4">
+<div class="text-center font-label-md text-outline py-2 uppercase">Dom</div>
+<div class="text-center font-label-md text-outline py-2 uppercase">Lun</div>
+<div class="text-center font-label-md text-outline py-2 uppercase">Mar</div>
+<div class="text-center font-label-md text-outline py-2 uppercase">Mié</div>
+<div class="text-center font-label-md text-outline py-2 uppercase">Jue</div>
+<div class="text-center font-label-md text-outline py-2 uppercase">Vie</div>
+<div class="text-center font-label-md text-outline py-2 uppercase">Sáb</div>
+</div>
+<div class="calendar-grid gap-1">
+<!-- Empty cells for padding -->
+<div class="h-14 md:h-20"></div>
+<div class="h-14 md:h-20"></div>
+<!-- Days -->
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">1</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">2</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">3</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">4</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">5</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">6</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">7</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">8</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">9</button>
+<button class="h-14 md:h-20 flex items-center justify-center bg-primary text-on-primary font-bold">10</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">11</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">12</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">13</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">14</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">15</button>
+<button class="h-14 md:h-20 flex items-center justify-center border border-transparent hover:border-outline-variant transition-all font-body-md">16</button>
+</div>
+</div>
+</section>
+<!-- Step 2: Time Slots -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md">2</span>
+<h2 class="font-headline-sm text-headline-sm">Seleccione una Hora</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<button class="py-4 border border-outline-variant hover:border-primary transition-all font-label-md text-label-md text-center">09:00 AM</button>
+<button class="py-4 border border-outline-variant hover:border-primary transition-all font-label-md text-label-md text-center">10:30 AM</button>
+<button class="py-4 border-2 border-primary bg-surface-container-high transition-all font-label-md text-label-md text-center flex flex-col items-center">
+<span>11:00 AM</span>
+<span class="text-[10px] text-primary uppercase mt-1">Seleccionado</span>
+</button>
+<button class="py-4 border border-outline-variant hover:border-primary transition-all font-label-md text-label-md text-center">01:30 PM</button>
+<button class="py-4 border border-outline-variant hover:border-primary transition-all font-label-md text-label-md text-center">03:00 PM</button>
+<button class="py-4 border border-outline-variant opacity-40 cursor-not-allowed font-label-md text-label-md text-center line-through">04:30 PM</button>
+</div>
+</section>
+<!-- Step 3: Description -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md">3</span>
+<h2 class="font-headline-sm text-headline-sm">Detalles del Caso</h2>
+</div>
+<div class="space-y-6">
+<div>
+<label class="block font-label-md text-label-md text-outline uppercase mb-2">Asunto Jurídico</label>
+<select class="w-full border-b-2 border-outline-variant bg-transparent py-3 focus:border-primary outline-none transition-all font-body-md">
+<option>Derecho Corporativo</option>
+<option>Planificación Patrimonial</option>
+<option>Propiedad Intelectual</option>
+<option>Litigios y Disputas</option>
+<option>Bienes Raíces</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-outline uppercase mb-2">Breve descripción de sus necesidades</label>
+<textarea class="w-full border border-outline-variant bg-transparent p-4 focus:border-primary outline-none transition-all font-body-md resize-none" placeholder="Por favor, proporcione contexto para ayudar a nuestros abogados a prepararse..." rows="4"></textarea>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Side: Summary Sidebar -->
+<aside class="lg:w-96">
+<div class="sticky top-32 bg-primary-container text-on-primary-container p-8 space-y-8">
+<h2 class="font-headline-sm text-headline-sm text-secondary-fixed">Resumen de la Cita</h2>
+<div class="space-y-6 border-b border-on-primary-fixed-variant pb-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">calendar_today</span>
+<div>
+<p class="font-label-md text-label-md text-on-primary-container/60 uppercase">Fecha</p>
+<p class="font-body-md text-body-md text-white">Jueves, 10 de Oct, 2024</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-primary-container/60 uppercase">Hora</p>
+<p class="font-body-md text-body-md text-white">11:00 AM — 12:00 PM</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">person</span>
+<div>
+<p class="font-label-md text-label-md text-on-primary-container/60 uppercase">Especialista</p>
+<p class="font-body-md text-body-md text-white">Revisión por Socio Director</p>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between font-label-md">
+<span>TARIFA DE CONSULTA</span>
+<span class="text-white">$450.00</span>
+</div>
+<p class="text-caption font-caption text-on-primary-container/60 italic">
+                        La tarifa de consulta es deducible de futuros acuerdos de retención si se contrata dentro de los 30 días.
+                    </p>
+</div>
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed py-5 font-label-md text-label-md uppercase font-bold hover:bg-secondary-fixed-dim transition-all tracking-widest shadow-lg">
+                    Confirmar Cita
+                </button>
+<div class="flex items-center justify-center gap-2 text-on-primary-container/40">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-caption font-caption">Reserva Segura Encriptada</span>
+</div>
+</div>
+<!-- Attorney Quick View Card -->
+<div class="mt-8 border border-outline-variant p-6 bg-surface-container-lowest">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-16 h-16 bg-slate-200 grayscale overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Un retrato profesional formal en blanco y negro de un abogado sénior con un traje azul marino hecho a medida, sentado en una biblioteca forrada de caoba. La iluminación es suave y cinematográfica, creando una atmósfera de autoridad tranquila y prestigio legal de alto nivel. Vibras minimalistas modernas con elementos arquitectónicos corporativos clásicos." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsrccNWtpofHvAtdmtXZcFTflvoMDlLWgnzM_EtcgFxRm8QPTyGeRBBvca4h7cdeDZcEFbpkJp3N7CxKPhluYzclUKAJllhAoOUQ_Owzuo_Jc0wYRasNB3epd4VI_hQnlXFdDQnLYy_NI0HeWTfQ3hJPO4OxJz-DjKIZ26Mh1vsRBhrr0waz9dJy7f9JD-hfp9NLgbGwW9URIYaCT-jVtkeKqymiMZ5nc3huREaQX6gRJJzi0_tUSw"/>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px]">Julian Vance</h4>
+<p class="font-caption text-caption text-outline">Asesor Sénior, Derecho Corporativo</p>
+</div>
+</div>
+<div class="flex gap-1 text-secondary-fixed mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant italic">
+                    "Prestige Legal brinda más que solo asesoramiento; brindamos la ventaja estratégica necesaria para entornos complejos de alto riesgo."
+                </p>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-tertiary-container border-t border-on-primary-fixed-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter py-12 max-w-container-max mx-auto w-full">
+<div class="text-headline-sm font-headline-sm text-secondary-fixed mb-8 md:mb-0 uppercase tracking-tighter">
+            PRESTIGE LEGAL
+        </div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Política de Privacidad</a>
+<a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Términos de Servicio</a>
+<a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Aviso Legal</a>
+<a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Contáctenos</a>
+</div>
+<div class="text-caption font-caption text-on-primary-container/60 text-center md:text-right">
+            © 2024 Prestige Legal Law Firm. Todos los derechos reservados. Publicidad de abogados.
+        </div>
+</div>
+</footer>
+<!-- Micro-interaction script -->
+<script>
+        document.querySelectorAll('button:not([disabled])').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (!this.classList.contains('bg-primary')) {
+                    // Logic for visual selection
+                    const parent = this.parentElement;
+                    if (parent.classList.contains('grid-cols-2')) {
+                        parent.querySelectorAll('button').forEach(btn => {
+                            btn.classList.remove('border-2', 'border-primary', 'bg-surface-container-high');
+                            btn.classList.add('border', 'border-outline-variant');
+                            const indicator = btn.querySelector('span:last-child');
+                            if (indicator && (indicator.innerText === 'Selected' || indicator.innerText === 'Seleccionado')) indicator.remove();
+                        });
+                        this.classList.remove('border', 'border-outline-variant');
+                        this.classList.add('border-2', 'border-primary', 'bg-surface-container-high');
+                        const sel = document.createElement('span');
+                        sel.className = 'text-[10px] text-primary uppercase mt-1';
+                        sel.innerText = 'Seleccionado';
+                        this.appendChild(sel);
+                    }
+                }
+            });
+        });
+
+        // Simple Fade-in for page load
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('opacity-0');
+            setTimeout(() => {
+                document.body.classList.add('transition-opacity', 'duration-1000');
+                document.body.classList.remove('opacity-0');
+            }, 100);
+        });
+    </script>
+</body></html>
