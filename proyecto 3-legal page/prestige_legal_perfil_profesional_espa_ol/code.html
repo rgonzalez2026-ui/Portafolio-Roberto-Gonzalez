@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prestige Legal | Asesoría Legal Distinguida</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Work+Sans:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&amp;family=Work+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#131b2e",
+                    "secondary-container": "#fae0a9",
+                    "on-secondary-fixed-variant": "#56451c",
+                    "background": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#c6c6cd",
+                    "on-surface": "#0d1c2e",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#dce9ff",
+                    "surface-container-highest": "#d5e3fc",
+                    "outline": "#76777d",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-tertiary-fixed-variant": "#474743",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "inverse-on-surface": "#eaf1ff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#c8c6c2",
+                    "on-secondary-container": "#756237",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#fae0a9",
+                    "secondary": "#6f5c31",
+                    "primary": "#000000",
+                    "surface": "#f8f9ff",
+                    "on-primary-container": "#7c839b",
+                    "inverse-primary": "#bec6e0",
+                    "tertiary-container": "#1c1c19",
+                    "on-background": "#0d1c2e",
+                    "surface-variant": "#d5e3fc",
+                    "surface-container": "#e6eeff",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-container-low": "#eff4ff",
+                    "surface-dim": "#ccdbf3",
+                    "on-surface-variant": "#45464d",
+                    "surface-bright": "#f8f9ff",
+                    "primary-fixed": "#dae2fd",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#565e74",
+                    "on-tertiary-container": "#858480",
+                    "tertiary-fixed": "#e5e2dd",
+                    "on-secondary-fixed": "#251a00",
+                    "secondary-fixed-dim": "#ddc490"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "container-max": "1200px",
+                    "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Work Sans"],
+                    "caption": ["Work Sans"],
+                    "display-lg": ["Playfair Display"],
+                    "label-md": ["Work Sans"],
+                    "headline-sm": ["Playfair Display"],
+                    "body-md": ["Work Sans"],
+                    "display-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .quote-accent {
+            border-left: 4px solid #fae0a9;
+        }
+        .text-midnight { color: #131b2e; }
+        .bg-midnight { background-color: #131b2e; }
+        .border-gold { border-color: #fae0a9; }
+        
+        .framed-content {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-outline-variant">
+<nav class="flex justify-between items-center px-gutter max-w-container-max mx-auto w-full h-20">
+<div class="text-headline-sm font-headline-sm tracking-tighter text-primary">
+                PRESTIGE LEGAL
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 transition-all duration-300" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Áreas de Práctica</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Abogados</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Citas</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Mis Casos</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block px-6 py-2 bg-midnight text-white font-label-md text-label-md tracking-wider uppercase transition-all hover:bg-slate-800">
+                    Portal del Cliente
+                </button>
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative bg-background py-16 md:py-32">
+<div class="framed-content grid grid-cols-1 md:grid-cols-12 gap-gutter px-gutter items-center">
+<div class="md:col-span-7 z-10">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-6 block">Legado y Excelencia</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 leading-tight">
+                        Defendiendo sus intereses con <br class="hidden md:block"/> absoluta precisión.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                        En Prestige Legal combinamos décadas de herencia con un enfoque estratégico moderno para brindar a clientes de alto patrimonio y entidades corporativas una autoridad legal sin precedentes.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-10 py-4 bg-midnight text-white font-label-md text-label-md tracking-widest uppercase hover:bg-slate-800 transition-colors">
+                            Agendar Consulta
+                        </button>
+<button class="px-10 py-4 border border-midnight text-midnight font-label-md text-label-md tracking-widest uppercase hover:bg-surface-container transition-colors">
+                            Áreas de Práctica
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 mt-12 md:mt-0 relative">
+<div class="absolute inset-0 border-2 border-gold -m-4 z-0 pointer-events-none hidden md:block"></div>
+<img alt="Retrato del Abogado Principal" class="relative z-10 w-full aspect-square object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700 shadow-xl border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbaXXCZ7TZY8MfeZfWHIaRshayXBgTny4GYEYnhchgpC3lo3aD75WexTlp_CoXZ0qbbjbmEjIkhREUS1Hs7_8WwZxGA3gArFgA5ZBHoH5PBV_Ti8dIAkvUwb3_kRJlTqMzglb6K_Bwnq5wss6NMkYmmd2xKWuNWlyYcuq9Ez6FCY8KndSfjoYyndyHotkCYWzXlfab405ow7WyZ98tg_NfltC4FaR59myAZ6p3SW1CYz0iM2Dm5LTQ"/>
+</div>
+</div>
+</section>
+<!-- Values/Bento Style Divider -->
+<section class="bg-surface-container-low py-12 border-y border-outline-variant">
+<div class="framed-content px-gutter grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">gavel</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-2 text-primary">Autoridad</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Representación legal inquebrantable en los litigios más complejos.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">verified_user</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-2 text-primary">Seguridad</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Planificación confidencial y estratégica para su legado y activos.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">insights</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-2 text-primary">Precisión</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Atención meticulosa a cada detalle legal y matiz corporativo.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed About Me Section -->
+<section class="py-32 bg-white">
+<div class="framed-content px-gutter">
+<div class="max-w-4xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Liderazgo Jurídico Distinguido</h2>
+<div class="w-24 h-1 bg-secondary-fixed mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start mb-24">
+<div class="space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                                Fundada bajo principios de integridad y preparación exhaustiva, Prestige Legal ha sido un bastión de excelencia jurídica por más de veinte años. Nuestro equipo directivo aporta una combinación única de agudeza corporativa y experiencia probada en tribunales.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Creemos que la verdadera representación legal no trata solo de la ley, sino de comprender los objetivos intrincados de nuestros clientes. Cada caso se gestiona con la confianza serena que solo otorga la experiencia profunda.
+                            </p>
+</div>
+<div class="quote-accent pl-8 py-4">
+<blockquote class="italic font-headline-sm text-headline-sm text-primary mb-4 leading-relaxed">
+                                "La medida de una firma no reside en el volumen de sus casos, sino en la precisión de sus resultados."
+                            </blockquote>
+<cite class="font-label-md text-label-md uppercase tracking-widest text-secondary">— Abogado Principal</cite>
+</div>
+</div>
+<!-- Areas of Expertise (Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Corporate Law -->
+<div class="p-10 border border-outline-variant hover:border-gold transition-all group">
+<div class="w-12 h-12 bg-primary-container text-secondary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">business</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-4 text-primary">Derecho Corporativo</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Fusiones y adquisiciones, cumplimiento y gobernanza para empresas establecidas y firmas en crecimiento.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<div class="w-1.5 h-1.5 bg-secondary-fixed"></div> Estrategia de Fusión
+                                </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<div class="w-1.5 h-1.5 bg-secondary-fixed"></div> Mitigación de Riesgos
+                                </li>
+</ul>
+</div>
+<!-- Estate Planning -->
+<div class="p-10 border border-outline-variant hover:border-gold transition-all group">
+<div class="w-12 h-12 bg-primary-container text-secondary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-4 text-primary">Planificación Patrimonial</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Sofisticadas estrategias de preservación de riqueza y sucesión para individuos privados y familias.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<div class="w-1.5 h-1.5 bg-secondary-fixed"></div> Estructuras de Fideicomiso
+                                </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<div class="w-1.5 h-1.5 bg-secondary-fixed"></div> Optimización Fiscal
+                                </li>
+</ul>
+</div>
+<!-- Family Law -->
+<div class="p-10 border border-outline-variant hover:border-gold transition-all group">
+<div class="w-12 h-12 bg-primary-container text-secondary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">family_restroom</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-4 text-primary">Derecho de Familia</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Resolución discreta y efectiva de asuntos domésticos y matrimoniales complejos y de alto nivel.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<div class="w-1.5 h-1.5 bg-secondary-fixed"></div> División de Activos
+                                </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<div class="w-1.5 h-1.5 bg-secondary-fixed"></div> Asesoría en Custodia
+                                </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="bg-primary-container text-white py-24">
+<div class="framed-content px-gutter text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 text-secondary-fixed">Establezca su Defensa Hoy</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-12 max-w-2xl mx-auto">
+                    La confidencialidad y la experiencia están a solo una consulta de distancia. Permítanos navegar las complejidades mientras usted se enfoca en su crecimiento.
+                </p>
+<button class="px-16 py-6 bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md tracking-[0.2em] uppercase font-bold hover:bg-white transition-all transform hover:-translate-y-1">
+                    Agendar una Consulta
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-tertiary-container border-t border-on-primary-fixed-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter py-12 max-w-container-max mx-auto w-full">
+<div class="mb-8 md:mb-0">
+<div class="text-headline-sm font-headline-sm text-secondary-fixed mb-4">PRESTIGE LEGAL</div>
+<p class="font-caption text-caption text-on-primary-container max-w-xs text-center md:text-left">
+                    Excelencia profesional en Derecho Corporativo, Planificación Patrimonial y Derecho de Familia desde 2004.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-fixed transition-colors underline underline-offset-4" href="#">Política de Privacidad</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-fixed transition-colors underline underline-offset-4" href="#">Términos de Servicio</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-fixed transition-colors underline underline-offset-4" href="#">Aviso Legal</a>
+<a class="font-label-md text-label-md text-on-primary-container hover:text-secondary-fixed transition-colors underline underline-offset-4" href="#">Contacto</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-caption text-caption text-on-primary-container">
+                    © 2024 Prestige Legal Law Firm. Todos los derechos reservados. Publicidad de Abogados.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.font-display-lg, .font-headline-md, .group');
+            animatedElements.forEach(el => {
+                el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(el);
+            });
+        });
+    </script>
+</body></html>
