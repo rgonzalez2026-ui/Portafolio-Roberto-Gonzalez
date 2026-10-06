@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Roberto González, estudiante de ingeniería en informática.">
+    <title>Roberto González | Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#inicio">RG<span>.</span></a>
+        <nav aria-label="Navegación principal">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <p class="eyebrow">Estudiante de ingeniería en informática</p>
+                <h1>Creo experiencias digitales <span>con propósito.</span></h1>
+                <p class="hero-text">Hola, soy Roberto González. Me interesa transformar ideas en proyectos web funcionales, claros y memorables.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#proyectos">Ver mis proyectos <span>↓</span></a>
+                    <a class="button button-ghost" href="#contacto">Hablemos</a>
+                </div>
+            </div>
+            <div class="profile-wrap">
+                <div class="profile-glow"></div>
+                <div class="profile-card">
+                    <img src="foto-presentacion.jpeg" alt="Foto de Roberto González">
+                    <div class="profile-label"><strong>Roberto González</strong><span>Desarrollador en formación</span></div>
+                </div>
+                <span class="floating-tag tag-one">HTML</span>
+                <span class="floating-tag tag-two">CSS</span>
+                <span class="floating-tag tag-three">&lt;/&gt;</span>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="proyectos">
+            <div class="section-heading">
+                <div><p class="eyebrow">Mi trabajo</p><h2>Proyectos destacados</h2></div>
+                <p>Una selección de ideas y proyectos que representan mi proceso de aprendizaje.</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-visual visual-portfolio" role="img" aria-label="Vista previa de mi portafolio"><span>RG<span>.</span></span></div>
+                    <div class="project-content"><span class="project-number">01</span><h3>Mi portafolio</h3><p>Página personal con presentación, proyectos destacados y formulario de contacto.</p><a href="#inicio" class="project-link">Estás aquí ↑</a></div>
+                </article>
+                <article class="project-card">
+                    <div class="project-visual visual-nova" role="img" aria-label="Vista previa del proyecto Nova"><span>Nova</span></div>
+                    <div class="project-content"><span class="project-number">02</span><h3>Nova</h3><p>Boceto web interactivo para organizar ideas con claridad y una interfaz moderna.</p><a href="proyecto%202/boceto%201.html" class="project-link">Abrir proyecto ↗</a></div>
+                </article>
+                <article class="project-card">
+                    <div class="project-visual visual-legal" role="img" aria-label="Vista previa de Prestige Legal"><span>Prestige<br>Legal</span></div>
+                    <div class="project-content"><span class="project-number">03</span><h3>Prestige Legal</h3><p>Landing page elegante para una asesoría legal, con enfoque editorial y profesional.</p><a href="proyecto%203-legal%20page/prestige_legal_perfil_profesional_espa_ol/code.html" class="project-link">Abrir proyecto ↗</a></div>
+                </article>
+                <article class="project-card">
+                    <div class="project-visual visual-promar" role="img" aria-label="Vista previa de Promar"><span>Promar</span></div>
+                    <div class="project-content"><span class="project-number">04</span><h3>Promar</h3><p>Página web para productos de sushi, con catálogo, destacados y una identidad visual propia.</p><a href="proyecto%204/index.html" class="project-link">Abrir proyecto ↗</a></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section about-section" id="sobre-mi">
+            <div class="about-mark">RG</div>
+            <div><p class="eyebrow">Conóceme</p><h2>Más que código,<br><span>curiosidad.</span></h2></div>
+            <p class="about-text">Soy estudiante de Ingeniería en Informática de la Universidad Católica de Temuco. Desde pequeño me interesa la tecnología y actualmente desarrollo mis habilidades en programación, diseño web y creación de proyectos digitales.</p>
+        </section>
+
+        <section class="section contact-section" id="contacto">
+            <p class="eyebrow">¿Tienes una idea?</p>
+            <h2>Hagámosla realidad.</h2>
+            <p class="contact-details">
+                <a href="mailto:r.goonzlez@gmail.com">r.goonzlez@gmail.com</a>
+                <a href="tel:+56972725235">+56 9 72725235</a>
+            </p>
+            <form action="mailto:r.goonzlez@gmail.com" method="post" enctype="text/plain">
+                <div class="form-row"><label for="nombre">Nombre<input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required></label><label for="email">Correo electrónico<input type="email" id="email" name="email" placeholder="tu@email.com" required></label></div>
+                <label for="mensaje">Mensaje<textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea></label>
+                <button class="button button-primary" type="submit">Enviar mensaje <span>↗</span></button>
+            </form>
+        </section>
+    </main>
+
+    <footer><p>© 2026 Roberto González</p><p>Hecho con intención y código.</p></footer>
+</body>
+</html>
