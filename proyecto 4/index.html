@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promar — Todo para tu barra de sushi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-row wrap">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.4" fill="currentColor" stroke="none"/></svg>
+      <span class="brand-name">Promar</span>
+    </div>
+    <nav class="links" id="navLinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#destacados">Destacados</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartOpenBtn" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="17.5" cy="20.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Insumos frescos · Temuco</div>
+        <h1>Arma sushi de nivel <em>itamae</em> en tu propia cocina</h1>
+        <p class="lead">Arroz, algas nori, pescados grado sushi, salsas y utensilios — todo lo que necesitas para tu barra, en un solo pedido con despacho rápido en Temuco y alrededores.</p>
+        <div class="btn-row">
+          <a href="#productos" class="btn btn-primary">Ver catálogo</a>
+          <a href="#destacados" class="btn btn-ghost">Lo más pedido</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg class="roll-plate" viewBox="0 0 300 300" fill="none">
+          <circle cx="150" cy="150" r="140" fill="#EFE7D3"/>
+          <circle cx="150" cy="150" r="112" fill="#F6F1E4" stroke="#182A20" stroke-width="3"/>
+          <circle cx="150" cy="150" r="70" fill="#182A20"/>
+          <circle cx="150" cy="150" r="50" fill="#F6F1E4"/>
+          <circle cx="150" cy="150" r="26" fill="#E3653F"/>
+          <circle cx="150" cy="150" r="26" fill="#E3653F" opacity="0.85"/>
+          <g stroke="#182A20" stroke-width="2" opacity="0.5">
+            <line x1="40" y1="150" x2="66" y2="150"/>
+            <line x1="234" y1="150" x2="260" y2="150"/>
+            <line x1="150" y1="40" x2="150" y2="66"/>
+            <line x1="150" y1="234" x2="150" y2="260"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust">
+    <div class="wrap">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="7" width="14" height="11" rx="1.5"/><path d="M16 10h3.2L22 14v4h-6"/><circle cx="7" cy="19.5" r="1.6"/><circle cx="17.5" cy="19.5" r="1.6"/></svg>
+        <span>Despacho en 24–48 hrs en Temuco y La Araucanía</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6z"/></svg>
+        <span>Pescados y mariscos con cadena de frío</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 7 12 3 4 7v10l8 4 8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>
+        <span>Kits listos para principiantes</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        <span>Pedido mínimo bajo, ideal para probar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CINTA DESTACADOS -->
+  <section class="cinta-section" id="destacados">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>La cinta de los más pedidos</h2>
+          <p>Como en una barra kaiten: estos son los productos que más se repiten en los pedidos de la semana.</p>
+        </div>
+      </div>
+    </div>
+    <div class="belt-outer">
+      <div class="belt-track" id="beltTrack"></div>
+      <div class="belt-base"></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="productos" id="productos">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Catálogo completo</h2>
+          <p>Filtra por categoría o busca directamente lo que necesitas para tu próxima preparación.</p>
+        </div>
+      </div>
+      <div class="filter-row">
+        <div class="pills" id="pillRow"></div>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="searchInput" placeholder="Buscar producto...">
+        </div>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+    <div class="wrap">
+      <div>
+        <h2>Nosotros</h2>
+        <p>Promar nace para que cocineros caseros y pequeños restaurantes de Temuco tengan acceso a los mismos insumos que usan las barras de sushi profesionales, sin mínimos imposibles ni intermediarios.</p>
+        <p>Trabajamos directo con proveedores de pescado grado sushi, importadores de algas y arroz, y talleres locales de utensilios de bambú y madera, para que cada pedido llegue fresco y a tiempo.</p>
+      </div>
+      <ul class="valores">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><strong>Calidad grado sushi</strong><span>Pescados y mariscos verificados para consumo crudo, con trazabilidad de origen.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <div><strong>Despacho rápido</strong><span>Pedidos antes de las 14:00 hrs salen el mismo día dentro de Temuco.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.6-9.3-9C1.2 8.6 3 5 6.6 5 9 5 11 6.6 12 8c1-1.4 3-3 5.4-3 3.6 0 5.4 3.6 3.9 7-2.3 4.4-9.3 9-9.3 9z"/></svg>
+          <div><strong>Hecho para probar</strong><span>Pedidos mínimos bajos, perfectos si recién estás aprendiendo a hacer sushi.</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER / CONTACTO -->
+<footer id="contacto">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="brand-name display">Promar</span>
+        <p class="blurb">Insumos frescos y de calidad para tu sushi casero o tu barra profesional, con despacho en Temuco y toda La Araucanía.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>Temuco, Chile</li>
+          <li>+56 9 1234 5678</li>
+          <li>hola@promar.cl</li>
+          <li>Lun a Sáb, 9:00–19:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Recibe novedades y descuentos</h4>
+        <form class="contact-form" id="newsletterForm">
+          <input type="email" required placeholder="tu@correo.cl" id="newsletterEmail">
+          <button type="submit">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Promar. Todos los derechos reservados.</span>
+      <span>Hecho con arroz, alga y cariño en Temuco.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<button class="wa-float" id="waFloat" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.1 8.1 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5s-.6-1.5-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>
+</button>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer" role="dialog" aria-label="Carrito de compra">
+  <div class="drawer-head">
+    <h3>Tu pedido</h3>
+    <button class="drawer-close" id="drawerClose" aria-label="Cerrar carrito">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot">
+    <div class="subtotal-row"><span>Subtotal</span><span class="mono" id="subtotalVal">$0</span></div>
+    <button class="checkout-btn" id="checkoutBtn" disabled>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg>
+      Cotizar por WhatsApp
+    </button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
